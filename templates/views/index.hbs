@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ 
+        
+        <link rel = "stylesheet" href = "./css/styles.css">
+        <!--change the site name-->
+        <title>title</title>
+        <!--set the icon-->
+        <link rel = 'icon' href = './img/wetaher.png'>
+</head>
+
+<body>
+    <div class='main-content'>
+        {{>header}}
+        <p>some injections through hbs: {{title}}, {{name}}</p>
+        <form>
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+        <p id='message-1'></p>
+        <p id='message-2'></p>
+    </div>
+    {{>footer}}
+    
+    <!-- make sure the script run after all elem is avail-->
+    <script src = "js/app.js"></script>
+</body>
+</html>
